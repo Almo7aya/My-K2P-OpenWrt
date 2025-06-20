@@ -35,11 +35,11 @@ wget -P package/network/services/umdns/files https://raw.githubusercontent.com/o
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon-18.06
 
 # echo '### Argon Theme Config ###'
-rm -rf feeds/luci/themes/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
-# if have
-rm -rf feeds/luci/applications/luci-app-argon-config
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git feeds/luci/applications/luci-app-argon-config
+# rm -rf feeds/luci/themes/luci-theme-argon
+# git clone https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
+# # if have
+# rm -rf feeds/luci/applications/luci-app-argon-config
+# git clone https://github.com/jerrykuku/luci-app-argon-config.git feeds/luci/applications/luci-app-argon-config
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
